@@ -10,7 +10,7 @@ async def on_ready():
 
 @client.command()
 async def load(ctx, extension):
-    vision_id = 880846666624811088
+    vision_id = #your id
     if ctx.author == vision_id:
         client.load_extension(f"{extension}")
         await ctx.send(f"Loaded {extension}")
@@ -19,7 +19,7 @@ async def load(ctx, extension):
 
 @client.command()
 async def unload(ctx, extension):
-    vision_id = 880846666624811088
+    vision_id = #your id
     if ctx.author == vision_id:
         client.unload_extension(f"{extension}")
         await ctx.send(f"unloaded {extension}")
@@ -28,7 +28,7 @@ async def unload(ctx, extension):
 
 @client.command()
 async def reload(ctx, extension):
-    vision_id = 880846666624811088
+    vision_id = #your id
     if ctx.author == vision_id:
         client.unload_extension(f"{extension}")
         client.load_extension(f"{extension}")
