@@ -4,6 +4,8 @@ import os
 
 client = commands.Bot(command_prefix = commands.when_mentioned_or('-'), intents = discord.Intents.all())
 
+
+client.remove_command('help')
 @client.event
 async def on_ready():
     print("Ready")
